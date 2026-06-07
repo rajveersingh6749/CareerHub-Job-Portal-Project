@@ -1,0 +1,150 @@
+.custom_container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: rgb(41, 10, 71);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav_bar {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav_bar p {
+  font-size: 40px;
+}
+
+.nav_bar button {
+  background: transparent;
+  padding: 10px 18px;
+  border: 1px solid gray;
+  color: white;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.quotes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.quotes p {
+  font-size: 80px;
+  width: 50%;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+}
+
+.desc {
+  margin-top: 30px;
+}
+
+.desc p {
+  text-align: center;
+  font-size: 20px;
+  color: gray;
+}
+
+.btns {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.find_job_btn {
+  background-color: rgb(80, 80, 238);
+  border: none;
+  padding: 16px 20px;
+  font-size: 20px;
+  color: white;
+  margin-right: 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 200px;
+}
+
+.post_job_btn {
+  background-color: rgb(216, 59, 59);
+  border: none;
+  padding: 16px 20px;
+  font-size: 20px;
+  color: white;
+  margin-left: 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 200px;
+}
+
+.companies-wrapper {
+  margin-top: 100px;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.companies-track {
+  display: flex;
+  align-items: center;
+  gap: 64px;
+  width: max-content;
+  animation: scroll 20s linear infinite;
+}
+
+.companies-track img {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.banner {
+  margin-top: 100px;
+}
+
+.banner_img {
+  width: 100%;
+  height: 500px;
+  display: block;
+}
+
+.descriptions {
+  margin-top: 100px;
+  display: flex;
+  gap: 40px
+}
+
+.for_job_seekers,
+.for_employers {
+  color: white;
+  width: 700px;
+  padding: 30px;
+  border: 1px solid gray;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: rgb(34, 34, 78);
+}
+
+.for_job_seekers p,
+.for_employers p {
+    font-size: 20px;
+}
