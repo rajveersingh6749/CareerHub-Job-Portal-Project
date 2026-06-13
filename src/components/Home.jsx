@@ -1,5 +1,6 @@
 import React from "react";
 import "./Home.css";
+import FAQ from "./FAQ";
 
 const Home = () => {
   return (
@@ -64,6 +65,12 @@ const Home = () => {
             <p>Post jobs, manage applications, and find the best candidates.</p>
           </div>
         </div>
+
+        <FAQ /> 
+      </div>
+
+      <div className="footer">
+        <h2>Made with ❤️ by Rajveer Singh</h2>
       </div>
     </div>
   );
