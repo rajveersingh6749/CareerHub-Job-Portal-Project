@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import './FAQ.css'
+import "./FAQ.css";
 
 const faqs = [
   {
@@ -51,7 +51,9 @@ const FAQ = () => {
     <div className="faqs_container">
       {faqs.map((faq) => (
         <div key={faq.id}>
-          <h3 onClick={() => toggleFAQ(faq.id)} className="single_faq">{faq.question}</h3>
+          <h3 onClick={() => toggleFAQ(faq.id)} className="single_faq">
+            {faq.question}
+          </h3>
 
           {openId === faq.id && <p>{faq.answer}</p>}
         </div>

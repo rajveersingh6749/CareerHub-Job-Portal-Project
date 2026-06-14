@@ -1,14 +1,19 @@
 import React from "react";
 import "./Home.css";
-import FAQ from "./FAQ";
+import FAQ from "../../components/FAQ/FAQ";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
     <div>
       <div className="header">
         <div className="nav_bar custom_container">
-          <p>CareerHub</p>
-          <button>Login</button>
+          <Link to="/" className="logo">
+            <p>CareerHub</p>
+          </Link>
+          <Link to="/login">
+            <button>Login</button>
+          </Link>
         </div>
       </div>
 
@@ -66,7 +71,7 @@ const Home = () => {
           </div>
         </div>
 
-        <FAQ /> 
+        <FAQ />
       </div>
 
       <div className="footer">

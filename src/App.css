@@ -1,12 +1,11 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 .app_container {
+  min-height: 100vh;
   background-color: black;
   color: gray;
-  width: 100%;
-  height: 100%;
 }
